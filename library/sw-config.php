@@ -33,7 +33,7 @@ if (!function_exists('base_url')) {
 		$end = $atRoot ? ($atCore ? $core : $hostname) : ($atCore ? $core : $dir);
 		$base_url = sprintf( $tmplt, $http, $hostname, $end );
 	}
-	//else $base_url = 'http://localhost:8074/sisteminformasi/premium/AbsensiOnlineV1';
+	//else $base_url = 'http://localhost/cumates';
 	else $base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 		if ($parse) {
 			$base_url = parse_url($base_url);
