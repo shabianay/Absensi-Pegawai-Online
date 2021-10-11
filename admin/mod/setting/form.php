@@ -1,5 +1,4 @@
 <?php @session_start();
-
 require_once'../../../library/sw-config.php';
 if(empty($_SESSION['SESSION_USER']) && empty($_SESSION['SESSION_ID'])){
   header('location:../../login/');

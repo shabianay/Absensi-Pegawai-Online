@@ -17,7 +17,7 @@ echo'
     <div style="display: none;">
       <a class="credits" href="https://s-widodo.com" rel="nofollow" target="_blank"></a>
     </div>
-     &copy;'.DATE('Y').' '.$site_name.'
+     &copy;'.DATE('Y').' 
   </footer>
 </div>
 <!-- wrapper -->
