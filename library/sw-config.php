@@ -5,7 +5,7 @@ $pacth_url	='http://'.$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"].'';
 $DB_HOST 	= 'localhost';
 $DB_USER 	= 'root'; // User Database
 $DB_PASSWD  = ''; // Password Database
-$DB_NAME 	= 'iniuts'; // Nama database
+$DB_NAME 	= 'iniutsloh'; // Nama database
 // -------------- Koneksi Database ------------
 @define("DB_HOST", $DB_HOST);
 @define("DB_USER", $DB_USER);
@@ -33,7 +33,7 @@ if (!function_exists('base_url')) {
 		$end = $atRoot ? ($atCore ? $core : $hostname) : ($atCore ? $core : $dir);
 		$base_url = sprintf( $tmplt, $http, $hostname, $end );
 	}
-	//else $base_url = 'http://localhost/cumates';
+	//else $base_url = 'http://localhost/iniuts';
 	else $base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 		if ($parse) {
 			$base_url = parse_url($base_url);
