@@ -5,8 +5,8 @@ include_once '../library/sw-config.php';
 include_once '../library/google-client/Google_Client.php';
 include_once '../library/google-client/contrib/Google_Oauth2Service.php';
 
-$client_id = '482205120603-hf6aqm1mgr29ubsi2qttcrmfhmm2uklb.apps.googleusercontent.com'; // Google client ID
-$client_secret = '7EjMuD8XO88nR-5mtqYhh4Y3'; // Google Client Secret
+$client_id = '414601558843-58gthdvq0kcbeljba8h16qmicv0j85c6.apps.googleusercontent.com'; // Google client ID
+$client_secret = '7GOCSPX-guhs_y9vB4r0CplZFyedhQb3ASed'; // Google Client Secret
 $redirect_url = ''.$site_url.'/oauth/google'; // Callback URL
 
 // Call Google API
