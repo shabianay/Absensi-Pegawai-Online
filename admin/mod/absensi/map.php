@@ -34,13 +34,13 @@ echo'
 		<div id="peta" style="height:500px; width: 100%"></div>';?>
   	<script type="text/javascript">
   		var mymap = L.map('peta').setView([<?php echo $latitude;?>, <?php echo $longitude;?>], 13);
-            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2hhYmlhbmFyc3lsIiwiYSI6ImNrdTQzbHExODRhdmwydW5xM24ycTIxaDQifQ.y7hng4QZYOHGETxlKGnuKA', {
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmF5aGFudml0bzI3IiwiYSI6ImNrdndxeDRvYzBhcjcybnFpbjBsZzh4cXoifQ.qIfEG3FW9bc4XqhTen341Q', {
               maxZoom: 20,
               attribution:'',
               id: 'mapbox/streets-v11',
               tileSize: 512,
               zoomOffset:-1,
-              accessToken: 'pk.eyJ1Ijoic2hhYmlhbmFyc3lsIiwiYSI6ImNrdTQzbHExODRhdmwydW5xM24ycTIxaDQifQ.y7hng4QZYOHGETxlKGnuKA'
+              accessToken: 'pk.eyJ1IjoicmF5aGFudml0bzI3IiwiYSI6ImNrdndxeDRvYzBhcjcybnFpbjBsZzh4cXoifQ.qIfEG3FW9bc4XqhTen341Q'
             }).addTo(mymap);
           L.marker([<?php echo $latitude;?>, <?php echo $longitude;?>]).addTo(mymap);
           L.circle([<?php echo $latitude;?>, <?php echo $longitude;?>], 550, {
